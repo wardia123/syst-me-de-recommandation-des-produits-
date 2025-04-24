@@ -1,0 +1,15 @@
+package project;
+
+import javax.swing.SwingUtilities;
+
+public class Main {
+    public static void main(String[] args) {
+        // Lancer l'interface dans le thread d'événements Swing
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new LoginFrame(); // Afficher la fenêtre de connexion
+            }
+        });
+    }
+}
+
